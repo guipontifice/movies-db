@@ -1,0 +1,30 @@
+<div class="cards base">
+  <h2>Filmes da Semana!</h2>
+
+  <owl-carousel-o [options]="customOptions">
+    <ng-template carouselSlide *ngFor="let movie of movies">
+      <div class="movie-item-slide">
+        <h3>{{ movie.title }}</h3>
+        <p>
+          <img
+            *ngIf="movie.poster_path"
+            [src]="'https://image.tmdb.org/t/p/w200/' + movie.poster_path"
+            alt="{{ movie.title }} Poster"
+          />
+        </p>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+
+  <!-- <div class="movies-list">
+    <div class="movie-item" *ngFor="let movie of movies">
+      <h3>{{ movie.title }}</h3>
+      <p>{{ movie.overview | slice : 0 : 150 }}...</p>
+      <img
+        *ngIf="movie.poster_path"
+        [src]="'https://image.tmdb.org/t/p/w200/' + movie.poster_path"
+        alt="{{ movie.title }} Poster"
+      />
+    </div>
+  </div> -->
+</div>

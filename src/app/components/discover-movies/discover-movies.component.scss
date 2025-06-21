@@ -1,0 +1,19 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  .movies-list {
+    display: flex;
+    .movie-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 33%;
+    }
+  }
+}

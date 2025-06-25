@@ -1,9 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { MovieService } from '../../services/movie.service';
 import { CommonModule } from '@angular/common';
-import { OwlOptions, CarouselModule } from 'ngx-owl-carousel-o';
+// import { OwlOptions, CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; // Importe BrowserAnimationsModule aqui também
-
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-discover-movies',
@@ -23,10 +23,11 @@ export class DiscoverMoviesComponent implements OnInit {
   totalResults: number = 0;
 
 
+  
   ngOnInit(): void {
     this.movieService.getDiscoverMovie().subscribe({
       next: (res) => {
-        // Armazene os dados nas propriedades do componente
+        // Armazene os dados nas proprprichaiedades do componente
         this.movies = res.results;
         this.currentPage = res.page;
         this.totalPages = res.total_pages;
@@ -41,15 +42,23 @@ export class DiscoverMoviesComponent implements OnInit {
   }
 
 
-
-  customOptions: OwlOptions = {
-    loop: true,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', '']
+  
+  responsiveOptions = [
+  {
+    breakpoint: '1024px',
+    numVisible: 3,
+    numScroll: 1
+  },
+  {
+    breakpoint: '768px',
+    numVisible: 2,
+    numScroll: 1
+  },
+  {
+    breakpoint: '560px',
+    numVisible: 1,
+    numScroll: 1
   }
+];
 
 }

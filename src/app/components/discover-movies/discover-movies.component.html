@@ -1,7 +1,7 @@
 <div class="cards base">
   <h2>Filmes da Semana!</h2>
 
-  <owl-carousel-o [options]="customOptions">
+  <!-- <owl-carousel-o [options]="customOptions">
     <ng-template carouselSlide *ngFor="let movie of movies">
       <div class="movie-item-slide">
         <h3>{{ movie.title }}</h3>
@@ -14,17 +14,29 @@
         </p>
       </div>
     </ng-template>
-  </owl-carousel-o>
+  </owl-carousel-o> -->
 
-  <!-- <div class="movies-list">
-    <div class="movie-item" *ngFor="let movie of movies">
+  <div class="movies-list">
+    <p-carousel
+  [value]="movies"
+  [numVisible]="3"
+  [numScroll]="1"
+  [circular]="true"
+  [autoplayInterval]="5000"
+  [responsiveOptions]="responsiveOptions"
+  styleClass="custom-carousel"
+>
+  <ng-template let-movie pTemplate="item">
+    <div class="movie-item-slide">
       <h3>{{ movie.title }}</h3>
-      <p>{{ movie.overview | slice : 0 : 150 }}...</p>
       <img
         *ngIf="movie.poster_path"
         [src]="'https://image.tmdb.org/t/p/w200/' + movie.poster_path"
-        alt="{{ movie.title }} Poster"
+        alt="{{ movie.title }}"
+        class="movie-poster"
       />
+      <p>{{ movie.overview | slice: 0:100 }}...</p>
     </div>
-  </div> -->
+  </ng-template>
+</p-carousel>
 </div>

@@ -1,6 +1,6 @@
 ::ng-deep .custom-carousel .p-carousel-container {
   overflow: visible;
-  padding: 0 2rem; // espaço para os vizinhos aparecerem
+  padding: 0 2rem;
 }
 
 ::ng-deep .custom-carousel .p-carousel-items-content {
@@ -14,22 +14,19 @@
   border-radius: 8px;
   background: #f4f4f4;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
-  img.movie-poster {
-    width: 100%;
-    max-width: 150px;
-    margin: 0 auto;
-    display: block;
-    border-radius: 4px;
-  }
-
-  h3 {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 0.9rem;
-    color: #555;
-  }
+}
+.movie-item-slide img.movie-poster {
+  width: 100%;
+  max-width: 150px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 4px;
+}
+.movie-item-slide h3 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+.movie-item-slide p {
+  font-size: 0.9rem;
+  color: #555;
 }

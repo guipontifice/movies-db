@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './components/header/header.component';
-import { TestMovieComponent } from './components/test-movie/test-movie.component';
-import { DiscoverMoviesComponent } from './components/discover-movies/discover-movies.component';
+import { RouterOutlet } from '@angular/router';
 
 
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, TestMovieComponent, DiscoverMoviesComponent],
+  imports: [HeaderComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

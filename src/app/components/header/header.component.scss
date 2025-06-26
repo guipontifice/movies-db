@@ -18,7 +18,13 @@
             list-style-type: none;
             li {
                 margin: 0 15px;
+                a {
+                    color: white;
+                }
             }
+        }
+        a {
+            color: white;
         }
     }
 }

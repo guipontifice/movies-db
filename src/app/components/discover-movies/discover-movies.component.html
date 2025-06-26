@@ -18,25 +18,26 @@
 
   <div class="movies-list">
     <p-carousel
-  [value]="movies"
-  [numVisible]="3"
-  [numScroll]="1"
-  [circular]="true"
-  [autoplayInterval]="5000"
-  [responsiveOptions]="responsiveOptions"
-  styleClass="custom-carousel"
->
-  <ng-template let-movie pTemplate="item">
-    <div class="movie-item-slide">
-      <h3>{{ movie.title }}</h3>
-      <img
-        *ngIf="movie.poster_path"
-        [src]="'https://image.tmdb.org/t/p/w200/' + movie.poster_path"
-        alt="{{ movie.title }}"
-        class="movie-poster"
-      />
-      <p>{{ movie.overview | slice: 0:100 }}...</p>
-    </div>
-  </ng-template>
-</p-carousel>
+      [value]="movies"
+      [numVisible]="4"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="5000"
+      [responsiveOptions]="responsiveOptions"
+      styleClass="custom-carousel"
+    >
+      <ng-template let-movie pTemplate="item">
+        <div class="movie-item-slide">
+          <img
+            *ngIf="movie.poster_path"
+            [src]="'https://image.tmdb.org/t/p/w200/' + movie.poster_path"
+            alt="{{ movie.title }}"
+            class="movie-poster"
+          />
+          <h3>{{ movie.title }}</h3>
+          <p>{{ movie.overview | slice : 0 : 100 }}...</p>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
 </div>

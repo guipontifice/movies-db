@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 * {
   background-color: #0d031c;
+  .base {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    
+  }
 }
 
 @font-face {

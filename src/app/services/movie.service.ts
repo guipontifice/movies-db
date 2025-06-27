@@ -22,4 +22,12 @@ export class MovieService {
   getDiscoverMovie(): Observable<any> {
     return this.http.get(`${this.apiUrl}/discover/movie`, { headers: this.headers })
   }
+
+  getPopularMovie(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/movie/popular?language=pt-BR&page=1`, {headers: this.headers})
+  }
+
+  getNowPlaying(): Observable<any> {
+    return this.http.get(`${this.apiUrl}/movie/now_playing?language=en-US&page=1'`, {headers: this.headers})
+  }
 }

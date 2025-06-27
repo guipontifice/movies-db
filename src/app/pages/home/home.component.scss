@@ -1,0 +1,96 @@
+.home-content {
+  .como-funciona {
+    display: flex;
+    color: white;
+    @media (max-width: 768px ) {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .primeira-coluna {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-family: "Secular One", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 42px;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        color: #fff;
+      }
+    }
+    .segunda-coluna {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      .linha {
+        margin: 0 0 1.5rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #3d3549;
+        gap: 20px;
+        &:last-child {
+          border-bottom: 0px solid #000;
+        }
+        span {
+          width: 20%;
+        }
+        .texto {
+          padding-left: 0.5rem;
+          h3 {
+            font-family: "Lora", sans-serif;
+            font-weight: 500;
+          }
+          p {
+            font-family: "Poppins", sans-serif;
+          }
+        }
+        &.linha1 {
+          display: flex;
+          #num1 {
+            color: #279ff0;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: "Monoton", sans-serif;
+            font-size: 113px;
+            font-weight: 400;
+            line-height: 100%;
+            text-decoration: none;
+          }
+        }
+        &.linha2 {
+          display: flex;
+          #num2 {
+            color: #9894ff;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: Monoton, sans-serif;
+            font-size: 113px;
+            font-weight: 400;
+            line-height: 100%;
+            text-decoration: none;
+          }
+        }
+        &.linha3 {
+          display: flex;
+          #num3 {
+            color: #ce73ff;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: Monoton, sans-serif;
+            font-size: 113px;
+            font-weight: 400;
+            line-height: 100%;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

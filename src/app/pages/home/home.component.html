@@ -1,4 +1,71 @@
 <div class="home-content">
+  <div class="como-funciona base">
+    <div class="primeira-coluna">
+      <h2>Lorem, ipsum.</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia ipsum
+        quae in nostrum aliquid perferendis doloremque voluptatem quisquam vitae
+        illo? Repellat exercitationem ratione quas atque.
+      </p>
+    </div>
+    <div class="segunda-coluna">
+      <div class="linha linha1">
+        <span id="num1">1</span>
+        <div class="texto">
+          <h3>Populares</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptatum, non.
+          </p>
+        </div>
+      </div>
+      <div class="linha linha2">
+        <span id="num2">2</span>
+        <div class="texto">
+          <h3>Em Cartaz</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas,
+            dolorem.
+          </p>
+        </div>
+      </div>
+      <div class="linha linha3">
+        <span id="num3">3</span>
+        <div class="texto">
+          <h3>Próximos Lançamentos</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, sunt!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="movies-list">
+    <p-carousel
+      [value]="movies"
+      [numVisible]="4"
+      [numScroll]="1"
+      [circular]="true"
+      [autoplayInterval]="5000"
+      [responsiveOptions]="responsiveOptions"
+      styleClass="custom-carousel"
+    >
+      <ng-template let-movie pTemplate="item">
+        <div class="movie-item-slide">
+          <img
+            *ngIf="movie.poster_path"
+            [src]="'https://image.tmdb.org/t/p/w200/' + movie.poster_path"
+            alt="{{ movie.title }}"
+            class="movie-poster"
+          />
+          <h3>{{ movie.title }}</h3>
+          <p>{{ movie.overview | slice : 0 : 5 }}...</p>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div> -->
+
   <app-discover-movies></app-discover-movies>
   <app-test-movie></app-test-movie>
 </div>

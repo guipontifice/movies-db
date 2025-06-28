@@ -1,0 +1,96 @@
+.home-content .como-funciona {
+  display: flex;
+  color: white;
+}
+@media (max-width: 768px) {
+  .home-content .como-funciona {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+.home-content .como-funciona .primeira-coluna {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.home-content .como-funciona .primeira-coluna h2 {
+  font-family: "Secular One", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+.home-content .como-funciona .primeira-coluna p {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.home-content .como-funciona .segunda-coluna {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.home-content .como-funciona .segunda-coluna .linha {
+  margin: 0 0 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #3d3549;
+  gap: 20px;
+}
+.home-content .como-funciona .segunda-coluna .linha:last-child {
+  border-bottom: 0px solid #000;
+}
+.home-content .como-funciona .segunda-coluna .linha span {
+  width: 20%;
+}
+.home-content .como-funciona .segunda-coluna .linha .texto {
+  padding-left: 0.5rem;
+}
+.home-content .como-funciona .segunda-coluna .linha .texto h3 {
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+}
+.home-content .como-funciona .segunda-coluna .linha .texto p {
+  font-family: "Poppins", sans-serif;
+}
+.home-content .como-funciona .segunda-coluna .linha.linha1 {
+  display: flex;
+}
+.home-content .como-funciona .segunda-coluna .linha.linha1 #num1 {
+  color: #279ff0;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Monoton", sans-serif;
+  font-size: 113px;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: none;
+}
+.home-content .como-funciona .segunda-coluna .linha.linha2 {
+  display: flex;
+}
+.home-content .como-funciona .segunda-coluna .linha.linha2 #num2 {
+  color: #9894ff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Monoton, sans-serif;
+  font-size: 113px;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: none;
+}
+.home-content .como-funciona .segunda-coluna .linha.linha3 {
+  display: flex;
+}
+.home-content .como-funciona .segunda-coluna .linha.linha3 #num3 {
+  color: #ce73ff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Monoton, sans-serif;
+  font-size: 113px;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: none;
+}
